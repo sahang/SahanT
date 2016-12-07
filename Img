@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<body>
+<title> JavaScript </title>
+<style>
+.image
+{
+	width: 100px;
+	height: 100px;
+	padding-top: 20px;
+	padding-left: 20px;
+}	
+
+</style>
+
+<script>
+function myFunction(imagename)
+{
+	document.getElementById('heading').innerHTML=imagename;
+	document.getElementById('main').src=imagename+".jpg";
+}
+</script>
+</head>
+<body>
+<img src="bike.jpg" id="main" width="250px" height="250px"> <br>
+<h1 id="heading"> Bike </h1>
+
+<img src="bike.jpg" class="image" onclick="myFunction('bike')">
+<img src="city.jpg" class="image" onclick="myFunction('city')">
+<img src="Joker.jpg" class="image" onclick="myFunction('Joker')">
+<img src="RPM.jpg" class="image" onclick="myFunction('RPM')">
+<img src="Trains.jpg" class="image" onclick="myFunction('Trains')">
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time and make the content bigger.</button>
+
+
+
+<p onmouseover="document.getElementById('demo').style.fontSize = '50px'" onmouseout="document.getElementById('demo').style.fontSize = '25px' "id="demo"> </p>
+
+
+</body>
+</html> 
